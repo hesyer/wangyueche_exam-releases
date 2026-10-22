@@ -1,0 +1,8 @@
+# 发布仓库不存放产物文件本身
+# 产物全部通过 GitHub Release 的附件分发（由主仓库 CI 推送）
+
+*.apk
+*.zip
+*.exe
+*.dll
+*.sqlite
