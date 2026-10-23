@@ -1,6 +1,6 @@
 # 网约车考试题库 Ride Exam — 官方下载
 
-面向网约车从业资格考试的**单机离线**题库应用，Android 与 Windows 双端。
+面向网约车从业资格考试的**单机离线**题库应用，支持 Android、Windows 与 iOS。
 
 > **本仓库只存放编译好的安装包，不含源代码。**
 
@@ -10,8 +10,11 @@
 
 | 平台 | 文件名格式 | 大小约 |
 |---|---|---|
-| Android | `wangyueche-exam-<版本号>.apk` | 24 MB |
-| Windows | `wangyueche-exam-<版本号>-windows.zip` | 15 MB |
+| Android | `wangyueche-exam-<版本号>.apk` | 57 MB |
+| Windows | `wangyueche-exam-<版本号>-windows.zip` | 13 MB |
+| iOS（未签名） | `wangyueche-exam-<版本号>-ios-unsigned.ipa` | 9 MB |
+
+> iOS 目前提供的是**未签名**包，需要自行重签后安装 —— 详见下方「iOS」一节。
 
 ## 功能
 
@@ -38,6 +41,20 @@
 3. 返回并点击安装
 
 > 若之前装过测试版（debug 签名），需先卸载旧版再装正式版 —— 不同签名的包无法覆盖安装。
+
+### iOS（未签名包）
+
+iOS 包文件名带 `-unsigned` 后缀 —— Apple 要求所有可执行文件都有合法签名，
+当前这份 IPA **没有签名**，直接用「爱思助手」之类的工具装会报签名无效。
+
+**可行的装法**（任选其一）：
+
+- **AltStore / SideStore**（推荐）：用你自己的 Apple ID 登录，它会自动重签名后安装。
+  免费 Apple ID 签出来的包 **7 天有效**，过期重装即可。
+- **Apple Configurator 2 / Xcode**：导入后用自己的开发证书重签再安装。
+- **开发者模式**：iOS 16+ 需在「设置 → 隐私与安全性 → 开发者模式」里打开。
+
+配好 Apple 证书后，会另发一份可直接安装的签名版。
 
 ## 功能解锁
 
